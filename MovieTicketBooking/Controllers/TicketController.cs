@@ -12,7 +12,7 @@ namespace MovieTicketBooking.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Policy = "UserOnly")]
+    [Authorize(Policy = "UserAndAdmin")]
     public class TicketController : ControllerBase
     {
         private readonly ITicketService _service;
